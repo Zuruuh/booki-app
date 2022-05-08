@@ -2,24 +2,6 @@
     padding: 15px;
 }
 
-@media only screen and (max-width: 992px) {
-    .container {
-        padding: 0;
-    }
-
-    #accomodations .container {
-        padding: 0 20px;
-    }
-
-    #accomodations .container:last-child {
-        border-radius: 0;
-        padding-bottom: 37px;
-    }
-
-    #accomodations .container:first-child {
-        background-color: #fff;
-    }
-}
 
 #accomodations {
     display: flex;
@@ -94,6 +76,23 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .container {
+        padding: 0;
+    }
+
+    #accomodations .container {
+        padding: 0 20px;
+    }
+
+    #accomodations .container:last-child {
+        border-radius: 0;
+        padding-bottom: 37px;
+    }
+
+    #accomodations .container:first-child {
+        background-color: #fff;
+    }
+
     #accomodations {
         align-items: center;
         flex-direction: column-reverse;
