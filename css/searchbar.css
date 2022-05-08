@@ -1,0 +1,87 @@
+
+form.searchbar {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+form.searchbar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25% 0 0 25%;
+    background-color: #f2f2f2;
+}
+
+form.searchbar div i {
+    font-size: 18px;
+}
+
+form.searchbar input:not(.submit) {
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #f2f2f2;
+    padding-right: 45px;
+    padding-left: 15px;
+    outline: 0;
+}
+
+form.searchbar input:not(.submit)::-moz-placeholder {
+    color: #000;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+form.searchbar input:not(.submit):-ms-input-placeholder {
+    color: #000;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+form.searchbar input:not(.submit)::placeholder {
+    color: #000;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+form.searchbar .submit {
+    width: auto;
+    border: 0;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065fc;
+    padding: 0 20px;
+}
+
+form.searchbar .submit span {
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: .8px;
+    font-weight: 800;
+}
+
+form.searchbar .submit i {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    form.searchbar input:not(.submit) {
+        padding-right: 20px;
+    }
+
+    form.searchbar .submit {
+        border-radius: 15px;
+        width: 50px;
+        padding: 0;
+    }
+
+    form.searchbar .submit span {
+        display: none;
+    }
+
+    form.searchbar .submit i {
+        display: block;
+        color: #fff;
+        font-size: 17px;
+    }
+}

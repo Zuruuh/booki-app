@@ -1,0 +1,44 @@
+footer.layout {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 218px;
+    display: flex;
+    padding: 50px;
+}
+
+footer.layout div {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer.layout div b {
+    font-size: 13px;
+}
+
+footer.layout div ul {
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+footer.layout div ul li {
+    margin-bottom: 10px;
+}
+
+footer.layout div ul li a {
+    color: #000;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    footer.layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer.layout div {
+        margin-bottom: 25px;
+    }
+}

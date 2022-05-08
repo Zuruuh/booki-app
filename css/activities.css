@@ -1,0 +1,126 @@
+#activities {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+#activities h2 {
+    margin-top: 32.5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#activities > div {
+    margin-top: 13.5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#activities > div .activity-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#activities > div > * {
+    flex: 1;
+}
+
+#activities > div > * > .activity {
+    width: 100%;
+}
+
+#activities > div .activity {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    position: relative;
+}
+
+#activities > div .activity article {
+    border-radius: 10px;
+}
+
+#activities > div .activity article picture {
+    flex: 1 1 auto;
+    height: calc(100% - 56px);
+}
+
+#activities > div .activity article img, #activities > div .activity article picture {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    display: inline-block;
+}
+
+#activities > div .activity article img {
+    height: 100%;
+    max-height: 100%;
+}
+
+#activities > div .activity article > div {
+    height: 56px;
+    padding: 20px;
+    width: 100%;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    box-shadow: 0 2px 4px 1px #00000012;
+}
+
+#activities > div .activity article > div h5 {
+    font-weight: 700;
+    color: #000;
+    font-size: 15px;
+}
+
+#activities > div .activity.xl article {
+    height: 444px;
+}
+
+#activities > div .activity.lg article {
+    height: 235px;
+}
+
+#activities > div .activity.md article {
+    height: 195px;
+}
+
+#activities > div .activity.sm article {
+    height: 165px;
+}
+
+@media only screen and (max-width: 992px) {
+    #activities h2 {
+        padding-left: 22px;
+    }
+
+    #activities > div {
+        flex-direction: column;
+        padding: 0 22px;
+        gap: 0;
+    }
+
+    #activities > div > .activity {
+        margin-bottom: 24px;
+    }
+
+    #activities > div .activity.xl article, #activities > div .activity.lg article, #activities > div .activity.md article, #activities > div .activity.sm article {
+        height: 165px;
+    }
+
+    #activities > div .activity-group {
+        margin-bottom: 24px;
+    }
+
+    #activities > div .activity-group > a:first-child {
+        margin-bottom: 24px;
+    }
+}

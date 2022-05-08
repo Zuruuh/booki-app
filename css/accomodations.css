@@ -1,0 +1,114 @@
+.container {
+    padding: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        padding: 0;
+    }
+
+    #accomodations .container {
+        padding: 0 20px;
+    }
+
+    #accomodations .container:last-child {
+        border-radius: 0;
+        padding-bottom: 37px;
+    }
+
+    #accomodations .container:first-child {
+        background-color: #fff;
+    }
+}
+
+#accomodations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#accomodations .container {
+    background-color: #f2f2f2;
+    height: auto;
+    border-radius: 10px;
+}
+
+#accomodations .container header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#accomodations .container header h2 {
+    font-size: 20px;
+}
+
+#accomodations .container footer {
+    margin-top: 25px;
+}
+
+#accomodations .container footer button {
+    border: 0;
+    background-color: transparent;
+}
+
+#accomodations .container .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    flex: 2 1;
+}
+
+#accomodations .container .content .fa-star {
+    color: #f2f2f2;
+    font-size: 12px;
+}
+
+#accomodations .container .content .fa-star.star-colored {
+    color: #0065fc;
+}
+
+#accomodations .container.vertical .content {
+    flex-direction: column;
+}
+
+#accomodations .container.vertical .content a {
+    width: 100%;
+}
+
+#accomodations .container.horizontal footer button {
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0;
+}
+
+#accomodations .container:first-child {
+    width: calc(65% - 20px);
+}
+
+#accomodations .container:last-child {
+    width: calc(35% - 20px);
+}
+
+@media only screen and (max-width: 992px) {
+    #accomodations {
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #accomodations .container, #accomodations .container:last-child, #accomodations .container:first-child {
+        width: 100%;
+    }
+
+    #accomodations .container .content, #accomodations .container:last-child .content, #accomodations .container:first-child .content {
+        justify-content: center;
+    }
+
+    #accomodations .container .content a, #accomodations .container:last-child .content a, #accomodations .container:first-child .content a {
+        width: 100%;
+    }
+}

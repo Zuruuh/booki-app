@@ -1,0 +1,95 @@
+
+article, aside, footer, header, main, nav, section {
+    display: block;
+}
+
+template {
+    display: none;
+}
+
+html {
+    font-family: sans-serif;;
+    -ms-text-size-adjust: 100%;;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    background: transparent;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+b {
+    font-weight: 700;
+}
+
+img {
+    border: 0;
+}
+
+button, input {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button, input {
+    line-height: normal;
+}
+
+button {
+    text-transform: none;
+}
+
+button, html input[type=button], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+h2, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: Raleway, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}

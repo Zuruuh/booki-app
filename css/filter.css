@@ -1,0 +1,37 @@
+
+li.filter {
+    display: flex;
+    position: relative;
+    height: 50px;
+    margin-left: 25px;
+}
+
+li.filter div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #deebff;
+    z-index: 1;
+    position: absolute;
+    left: -25px;
+}
+
+li.filter div i.fa-solid {
+    color: #0065fc;
+    font-size: 19px;
+}
+
+li.filter span.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 5px 15px 5px 27.5px;
+    border-radius: 0 25px 25px 0;
+    border: 2px solid #f2f2f2;
+    font-weight: 400;
+    font-size: 16px;
+}
