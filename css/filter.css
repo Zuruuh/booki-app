@@ -1,10 +1,16 @@
-
 li.filter {
     display: flex;
     position: relative;
     height: 50px;
     margin-left: 25px;
+    cursor: pointer;
 }
+
+li.filter:hover {
+    transform: scale(1.02);
+    transition: transform 0.1s ease-out;
+}
+
 
 li.filter div {
     display: flex;
